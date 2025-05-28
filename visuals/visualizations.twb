@@ -1,0 +1,1009 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='visuals_df' inline='true' name='federated.0xu72vo0e93qr11cirvrx1ls7mzw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='visuals_df' name='textscan.0blz2et0zyaj1v119yzaz097e2df'>
+            <connection class='textscan' directory='/Users/Shay/Desktop/malpractice-analysis/resources' filename='visuals_df.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0blz2et0zyaj1v119yzaz097e2df' name='visuals_df.csv' table='[visuals_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='amount' ordinal='0' />
+            <column datatype='integer' name='severity' ordinal='1' />
+            <column datatype='integer' name='age' ordinal='2' />
+            <column datatype='integer' name='private_attorney' ordinal='3' />
+            <column datatype='string' name='marital_status' ordinal='4' />
+            <column datatype='string' name='specialty' ordinal='5' />
+            <column datatype='string' name='insurance' ordinal='6' />
+            <column datatype='string' name='gender' ordinal='7' />
+            <column datatype='string' name='severity_groups' ordinal='8' />
+            <column datatype='string' name='payout_ranges' ordinal='9' />
+            <column datatype='string' name='age_groups' ordinal='10' />
+            <column datatype='string' name='specialty_group' ordinal='11' />
+            <column datatype='string' name='private_attorney_text' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>severity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[severity]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>severity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_attorney</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_attorney]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>private_attorney</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marital_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marital_status]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>marital_status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>specialty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[specialty]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>specialty</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insurance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[insurance]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>insurance</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>severity_groups</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[severity_groups]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>severity_groups</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payout_ranges</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payout_ranges]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>payout_ranges</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_groups</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_groups]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>age_groups</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>specialty_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[specialty_group]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>specialty_group</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_attorney_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[private_attorney_text]</local-name>
+            <parent-name>[visuals_df.csv]</parent-name>
+            <remote-alias>private_attorney_text</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='visuals_df.csv' datatype='table' name='[__tableau_internal_object_id__].[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Age Groups' datatype='string' name='[age_groups]' role='dimension' type='nominal' />
+      <column caption='Amount' datatype='integer' name='[amount]' role='measure' type='quantitative' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Insurance' datatype='string' name='[insurance]' role='dimension' type='nominal' />
+      <column caption='Marital Status' datatype='string' name='[marital_status]' role='dimension' type='nominal' />
+      <column caption='Payout Ranges' datatype='string' name='[payout_ranges]' role='dimension' type='nominal' />
+      <column caption='Private Attorney' datatype='integer' name='[private_attorney]' role='measure' type='quantitative' />
+      <column caption='Private Attorney Text' datatype='string' name='[private_attorney_text]' role='dimension' type='nominal' />
+      <column caption='Severity' datatype='integer' name='[severity]' role='measure' type='quantitative' />
+      <column caption='Severity Groups' datatype='string' name='[severity_groups]' role='dimension' type='nominal' />
+      <column caption='Specialty' datatype='string' name='[specialty]' role='dimension' type='nominal' />
+      <column caption='Specialty Group' datatype='string' name='[specialty_group]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/zb/rdps0xt88v5d04008k8cd30r0000gn/T/tableau-temp/#TableauTemp_0tjmw5m19mym681d1ecem054djhy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/21/2025 08:14:01 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>amount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount</remote-alias>
+              <ordinal>0</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71050</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>severity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>severity</remote-alias>
+              <ordinal>1</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>117</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>private_attorney</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[private_attorney]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>private_attorney</remote-alias>
+              <ordinal>3</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marital_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[marital_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marital_status</remote-alias>
+              <ordinal>4</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>specialty</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[specialty]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>specialty</remote-alias>
+              <ordinal>5</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insurance</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[insurance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insurance</remote-alias>
+              <ordinal>6</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>7</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>severity_groups</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[severity_groups]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>severity_groups</remote-alias>
+              <ordinal>8</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payout_ranges</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payout_ranges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payout_ranges</remote-alias>
+              <ordinal>9</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_groups</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_groups]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_groups</remote-alias>
+              <ordinal>10</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>specialty_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[specialty_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>specialty_group</remote-alias>
+              <ordinal>11</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>private_attorney_text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[private_attorney_text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>private_attorney_text</remote-alias>
+              <ordinal>12</ordinal>
+              <family>visuals_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='visuals_df.csv' id='visuals_df.csv_66CCBF7934FA42B1A63B736427F9BF9D'>
+            <properties context=''>
+              <relation connection='textscan.0blz2et0zyaj1v119yzaz097e2df' name='visuals_df.csv' table='[visuals_df#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='amount' ordinal='0' />
+                  <column datatype='integer' name='severity' ordinal='1' />
+                  <column datatype='integer' name='age' ordinal='2' />
+                  <column datatype='integer' name='private_attorney' ordinal='3' />
+                  <column datatype='string' name='marital_status' ordinal='4' />
+                  <column datatype='string' name='specialty' ordinal='5' />
+                  <column datatype='string' name='insurance' ordinal='6' />
+                  <column datatype='string' name='gender' ordinal='7' />
+                  <column datatype='string' name='severity_groups' ordinal='8' />
+                  <column datatype='string' name='payout_ranges' ordinal='9' />
+                  <column datatype='string' name='age_groups' ordinal='10' />
+                  <column datatype='string' name='specialty_group' ordinal='11' />
+                  <column datatype='string' name='private_attorney_text' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='visuals_df' name='federated.0xu72vo0e93qr11cirvrx1ls7mzw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xu72vo0e93qr11cirvrx1ls7mzw'>
+            <column caption='Amount' datatype='integer' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[amount]' derivation='Avg' name='[avg:amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[private_attorney_text]' derivation='None' name='[none:private_attorney_text:nk]' pivot='key' type='nominal' />
+            <column-instance column='[severity_groups]' derivation='None' name='[none:severity_groups:nk]' pivot='key' type='nominal' />
+            <column caption='Private Attorney Text' datatype='string' name='[private_attorney_text]' role='dimension' type='nominal' />
+            <column caption='Severity Groups' datatype='string' name='[severity_groups]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:severity_groups:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[avg:amount:qk]</rows>
+        <cols>([federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:severity_groups:nk] / [federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:private_attorney_text:nk])</cols>
+      </table>
+      <simple-id uuid='{1BAC67A5-DF5E-47ED-A61C-419306584182}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='visuals_df' name='federated.0xu72vo0e93qr11cirvrx1ls7mzw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xu72vo0e93qr11cirvrx1ls7mzw'>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Amount' datatype='integer' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[amount]' derivation='Avg' name='[avg:amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[avg:amount:qk]</rows>
+        <cols>[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{09A199E2-6366-4628-A689-52F2B43FE438}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='visuals_df' name='federated.0xu72vo0e93qr11cirvrx1ls7mzw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xu72vo0e93qr11cirvrx1ls7mzw'>
+            <column caption='Amount' datatype='integer' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[amount]' derivation='Avg' name='[avg:amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[severity]' derivation='None' name='[none:severity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[specialty]' derivation='None' name='[none:specialty:nk]' pivot='key' type='nominal' />
+            <column-instance column='[specialty_group]' derivation='None' name='[none:specialty_group:nk]' pivot='key' type='nominal' />
+            <column caption='Severity' datatype='integer' name='[severity]' role='measure' type='quantitative' />
+            <column caption='Specialty' datatype='string' name='[specialty]' role='dimension' type='nominal' />
+            <column caption='Specialty Group' datatype='string' name='[specialty_group]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:specialty:nk]' direction='ASC' using='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[avg:amount:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:severity:qk]' num-steps='9' palette='red_green_white_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:severity:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[avg:amount:qk]</rows>
+        <cols>([federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:specialty_group:nk] / [federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:specialty:nk])</cols>
+      </table>
+      <simple-id uuid='{3EEDF2F5-768C-479A-BA84-5949FD9AD905}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='visuals_df' name='federated.0xu72vo0e93qr11cirvrx1ls7mzw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xu72vo0e93qr11cirvrx1ls7mzw'>
+            <column caption='Amount' datatype='integer' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[amount]' derivation='Avg' name='[avg:amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[marital_status]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marital_status]' derivation='None' name='[none:marital_status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[avg:amount:qk]</rows>
+        <cols>[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:marital_status:nk]</cols>
+      </table>
+      <simple-id uuid='{BE5BBC85-AD07-42A8-8CE8-F094B1EFC75E}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='visuals_df' name='federated.0xu72vo0e93qr11cirvrx1ls7mzw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xu72vo0e93qr11cirvrx1ls7mzw'>
+            <column caption='Amount' datatype='integer' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[amount]' derivation='Avg' name='[avg:amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Insurance' datatype='string' name='[insurance]' role='dimension' type='nominal' />
+            <column-instance column='[insurance]' derivation='None' name='[none:insurance:nk]' pivot='key' type='nominal' />
+            <column-instance column='[severity_groups]' derivation='None' name='[none:severity_groups:nk]' pivot='key' type='nominal' />
+            <column caption='Severity Groups' datatype='string' name='[severity_groups]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:insurance:nk]' direction='DESC' using='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[avg:amount:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:severity_groups:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[avg:amount:qk]</rows>
+        <cols>[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:insurance:nk]</cols>
+      </table>
+      <simple-id uuid='{F1DA32AA-C91C-45B4-B3FA-840A1F2BB7C0}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:severity_groups:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{913B6360-CAC5-4AA6-88F8-D73296AAF976}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BF51BA5E-5350-4C68-837D-8CBACCB9D337}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:severity:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0C0041B6-2F44-4419-9C26-B4EE9D60306B}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{480A92D9-FF89-46C8-9999-43B9415D6F6B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.0xu72vo0e93qr11cirvrx1ls7mzw].[none:severity_groups:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F1F943A9-4710-4D8F-A5E7-BD6B9564FABB}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 5' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
